@@ -53,41 +53,66 @@
             </div>
         </div>
 
-        <div class="typeNavBar">
-            <div class="dropdown">
-                <div class="btn-group">
-                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                </div>
-              </div> 
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#">SpaceMarines</a> 
+                    <ul>
+                        <li><a href="#">Space Marines</a> </li>
+                        <li><a href="#">Black Templars</a> </li>
+                        <li><a href="#">Blood Angels</a> </li>
+                        <li><a href="#">Dark Angels</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Armies of Imperium</a> 
+                    <ul>
+                        <li><a href="#">Adepta Sororitas</a> </li>
+                        <li><a href="#">Adeptus Custodes</a> </li>
+                        <li><a href="#">Astra Militarum</a> </li>
+                        <li><a href="#">Imperial Knights</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Armies of Chaos</a>
+                    <ul>
+                        <li><a href="#">Chaos Daemons</a> </li>
+                        <li><a href="#">Chaos Knights</a> </li>
+                        <li><a href="#">Chaos Space Marine</a> </li>
+                        <li><a href="#">Death Guard</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Xenos Armies</a> 
+                    <ul>
+                        <li><a href="#">Craftworlds</a> </li>
+                        <li><a href="#">Drukhari</a> </li>
+                        <li><a href="#">Genestealer Cults</a> </li>
+                        <li><a href="#">Harlequins</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Terrain</a> 
+                    <ul>
+                        <li><a href="#">All Terrain</a> </li>
+                        <li><a href="#">Area Terrain</a> </li>
+                        <li><a href="#">Obstacles</a> </li>
+                        <li><a href="#">Buildings</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <div class="body">
             <div class="filter">
                 <h1>Filters</h1>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<a id="button" title="button">Press Me</a>
                 <h2>New</h2>
-                <button>Pre-Order</button>
-                <button>New Release</button>
-                <button>Avalible to Order</button>
-                <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <a id="button" title="button">Pre-Order</a>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <a id="button" title="button">New Release</a>
+                    <p>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <a id="button" title="button">Avalible to Order</a>
+                    </p>
+                    <p>
+                        <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+                    </p>
                 <h2>Start Here</h2>
                 <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
                 <h2>Limited Stock</h2>
@@ -95,14 +120,15 @@
                 <h2>Battle Roles</h2>
                 <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
             </div>
+
+            
             <div class="content">
+                
                 <link rel="location" href=""> 
                 <img src="images/contentBanner.jpg" alt="contentBanner">
                 <div class="contentLeft">
                     <img src="images/leftContentBanner.jpg" alt="leftContentBanner">
-                </div>
-                <div class="contentRight">
-                    <img src="images/contentBanner.jpg" alt="contentBanner">
+                    <img src="images/rightContentBanner.jpg" alt="rightContentBanner">
                 </div>
             </div>
         </div>
@@ -115,26 +141,8 @@
     </div>
 
     <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function dropDownFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-
+      
+        //toggle code
         $(document).ready(function() {
             $('a#button').click(function() {
                 $(this).toggleClass("down");
