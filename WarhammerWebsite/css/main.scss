@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background: #EEEEEE;
+    font-size: 18px;
+    height: 100vh;
+}
+
+.container{
+
+    .top {
+        background: #0A0A0A;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        .topLeft{
+            button{
+                width: 150px;
+                margin: 10px;
+                background: #0A0A0A;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .topRight{
+            button{
+                width: 150px;
+                margin: 10px;
+                background: #0A0A0A;
+                color: white;
+                border: none;
+                cursor: pointer;
+                float : right;
+            }
+        }
+    }
+
+    .bannerBar{
+        display: grid;
+        grid-template-columns: 40% 40% auto;
+        .bannerLeft{
+            position: relative;
+            min-height: 50px;
+            .logo {
+                position: absolute;
+                width: 144px;
+                bottom: 0;
+                left: 0;
+            }         
+        }
+        .bannerMiddle{
+           float: center;
+           margin: 50px;
+        }
+        .bannerRight{
+            float: right;
+            position: relative;
+            min-height: 50px;
+            .community {
+                position: absolute;
+                width: 120px;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+   
+    
+    height{
+        margin: 1em 0;
+    }
+
+    
+
+    p {
+        line-height: 1.7rem;
+    }
+}
+
+.nav-btn-group button {
+    background-color: #414040; 
+    border: 1px solid rgb(216, 216, 216); 
+    color: white; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    
+  }
+
+  .nav-btn-group button:not(:last-child) {
+    border-right: none; 
+  }
+
+  .nav-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.btn-group button {
+    background-color: #D3D3D3D3; 
+    border: 1px solid rgb(216, 216, 216); 
+    color: black; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; 
+  }
+  
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+a {
+    background: #ccc;
+    cursor: pointer;
+    border-top: solid 2px #eaeaea;
+    border-left: solid 2px #eaeaea;
+    border-bottom: solid 2px #777;
+    border-right: solid 2px #777;
+    padding: 5px 5px;
+  }
+  
+  a.down {
+    background: #bbb;
+    border-top: solid 2px #777;
+    border-left: solid 2px #777;
+    border-bottom: solid 2px #eaeaea;
+    border-right: solid 2px #eaeaea;
+  }
+
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+

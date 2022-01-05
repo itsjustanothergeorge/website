@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="top">
+            <div class="topLeft">
+                <button>Contact Us</button>
+            </div>
+            <div class="topRight">
+                <Button>Gift List</Button>
+                <Button>Sign in / Register</Button>
+            </div>
+        </div>
+
+        
+        <div class="bannerBar">
+            <div class="bannerLeft">
+                <img src="images/logo.svg" alt="WarhammerLogo" class="logo">
+            </div>
+            <div class="bannerMiddle">
+                <input type="search" name="search" id="searchbar" placeholder="Search">
+            </div>
+            <div class="bannerRight">
+                <div class="bannerRightTop">
+                    <button>Flag</button>
+                    <button>Checkout</button>
+                </div>
+                <div class="bannerRightBottem">
+                    <img src="images/community.jpg" alt="CommunityLogo" class="community">
+                </div>
+            </div>
+        </div>
+
+        <div class="topicNavBar">
+            <div class="nav-btn-group">
+                <button>New & Exclusive</button>
+                <button>Warhammer</button>
+                <button>Warhammer 40,000</button>
+                <button>Middle Earth</button>
+                <button>Black Library</button>
+                <button>Painting & Modeling</button>
+                <button>Boxed Games</button>
+                <button>Gifts</button>
+            </div>
+        </div>
+
+        <div class="typeNavBar">
+            <div class="dropdown">
+                <div class="btn-group">
+                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                    <button onclick="dropDownFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                </div>
+              </div> 
+        </div>
+
+        <div class="body">
+            <div class="filter">
+                <h1>Filters</h1>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<a id="button" title="button">Press Me</a>
+                <h2>New</h2>
+                <button>Pre-Order</button>
+                <button>New Release</button>
+                <button>Avalible to Order</button>
+                <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+                <h2>Start Here</h2>
+                <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+                <h2>Limited Stock</h2>
+                <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+                <h2>Battle Roles</h2>
+                <img src="images/horizontalDivider.jpg" alt="horizontalDivider" class="general">
+            </div>
+            <div class="content">
+                <link rel="location" href=""> 
+                <img src="images/contentBanner.jpg" alt="contentBanner">
+                <div class="contentLeft">
+                    <img src="images/leftContentBanner.jpg" alt="leftContentBanner">
+                </div>
+                <div class="contentRight">
+                    <img src="images/contentBanner.jpg" alt="contentBanner">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottem">
+
+        </div>
+    
+      
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function dropDownFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        $(document).ready(function() {
+            $('a#button').click(function() {
+                $(this).toggleClass("down");
+            });
+        });
+        </script>        
+</body>
+</html>
